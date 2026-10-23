@@ -1,0 +1,17 @@
+# Smithery listing config for the hosted (remote) Wendor MCP server.
+# Remote server — no local runtime. Connection is via the Smithery gateway
+# to the canonical endpoint below.
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: "Wendor API key (optional — OAuth sign-in is preferred). Sent as Authorization: Bearer <key>."
+    required: []
+  exampleConfig:
+    apiKey: ""
+remote:
+  url: https://proddashboardapi.wendor.in/mcp
+  transport: streamable-http
