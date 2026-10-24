@@ -1,0 +1,13 @@
+{
+  "name": "wendor",
+  "version": "1.0.0",
+  "description": "Wendor vending-machine dashboard integration. Ask about sales, machine status, inventory, refills, catalog and support tickets through the hosted Wendor MCP server (OAuth sign-in).",
+  "author": { "name": "Wendor", "url": "https://wendor.ai" },
+  "homepage": "https://wendor.ai",
+  "repository": "https://github.com/Wendor-in/wendor-mcp",
+  "license": "MIT",
+  "keywords": ["wendor", "wendor vending", "wendor dashboard"],
+  "mcpServers": {
+    "wendor": { "type": "http", "url": "https://proddashboardapi.wendor.in/mcp" }
+  }
+}
